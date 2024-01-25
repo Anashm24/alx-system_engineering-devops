@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#script that 
+#   display hours from 0 to 12
+#   display minutes from 1 to 59
+
+count=1
+while [ $count -le 60 ]
+do
+    if [ $count -eq 60 ]
+    then
+        echo "hour: 1"
+        for i in {1..9}
+        do
+            echo "$i"
+        done
+    else
+        echo $count
+    fi
+    ((count++))
+done
