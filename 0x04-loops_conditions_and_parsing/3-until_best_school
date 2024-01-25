@@ -2,7 +2,7 @@
 #printing Best School 10 times using until loop 
 
 counter=1
-until [ $counter -ge 10 ]
+until [ $counter -eq 11 ]
 do
     echo "Best School"
     ((counter++))
