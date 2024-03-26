@@ -13,4 +13,4 @@ echo 'Hello World!' > /var/www/html/index.nginx-debian.html
 sudo nginx -t
 
 # reload the nginx server
-service nginx start
+service nginx reload
