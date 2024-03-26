@@ -2,16 +2,11 @@
 # commands to Install nginx web server
 
 
-# first check updates and then install nginx and make listen to the port 80
 sudo apt -y update
 sudo apt -y install nginx
 ufw allow 'Nginx HTTP'
-
-# 
+ 
 echo 'Hello World!' > /var/www/html/index.nginx-debian.html
 
-# test the nginx configurations
 sudo nginx -t
-
-# reload the nginx server
 service nginx reload
