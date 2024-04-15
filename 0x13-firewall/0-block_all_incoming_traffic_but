@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#configure incoming and outgoing traffic using ufw
+
+sudo apt update
+sudo apt install ufw
+
+sudo systemctl start ufw
+sudo ufw enable 
+
+sudo ufw allow ssh
+sudo ufw allow https
+sudo ufw allow http
